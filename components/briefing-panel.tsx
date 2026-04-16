@@ -18,6 +18,7 @@ interface BriefingPanelProps {
 export function BriefingPanel({ events, analyses, onExport }: BriefingPanelProps) {
   const [isEditing, setIsEditing] = useState(false)
   const [customNotes, setCustomNotes] = useState("")
+
   const [approved, setApproved] = useState(false)
 
   const briefing = generateBriefingSummary(events, analyses)
